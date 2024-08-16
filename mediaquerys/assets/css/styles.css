@@ -1,0 +1,96 @@
+.main_container{
+display: grid;
+grid-template-rows: 1fr 1fr 5fr 1fr;
+grid-template-areas: 
+"opciones"
+"titulo"
+"main"
+"paginas"
+"footer"
+;
+height: 90vh;
+}
+header{
+grid-area: titulo;
+background-color: lightgrey;
+align-items: center;
+
+}
+h3{text-align: start;
+}
+.ordenar{
+text-align:center ;
+}
+.form select{
+display: flex;
+justify-items: end;
+}
+.main{
+grid-area: "main";
+}
+.menu{
+display: flex;
+flex-direction: column;
+}
+
+aside{
+grid-area: opciones;
+background-color: aqua;
+
+}
+footer{
+grid-area: footer;
+}
+
+.foto img{
+height: 400px;}
+
+.foto2{
+display: none;}
+
+nav{
+grid-area: paginas;
+}
+.menu2{
+display: none;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 576px){
+    
+
+main{
+
+display: grid;
+grid-template-rows: 1fr 6fr 1fr;
+grid-template-columns: repeat(4, 1fr);
+grid-template-areas: 
+"opciones titulo"
+"opciones main"
+"footer main";
+
+height: 98vh;
+row-gap: 5px;
+row-gap: 10px;}
+}
+.foto{
+gap: 3px;
+display: flexbox;
+flex-direction: row;
+}
+.foto img{
+height: 250px;}
+.foto2{
+display: flex;
+flex-wrap: wrap;
+}
+.foto2 img{
+height: 300px;}
+.foto{
+display: none;}
+
